@@ -7,6 +7,7 @@ dois = 0
 um = 0
 
 valor = int(input("Qual valor deseja sacar? R$"))
+print("Você receberá:")
 
 while valor != 0:
 
@@ -14,36 +15,40 @@ while valor != 0:
         while valor >= 100:
             valor = valor - 100
             cem = cem + 1
+        print(f"{cem} notas de cem")
 
     if valor >= 50:
         while valor >= 50:
             valor = valor - 50
             cinquenta = cinquenta + 1
+        print(f"{cinquenta} notas de cinquenta")
 
     if valor >= 20:
         while valor >= 20:
             valor = valor - 20
             vinte = vinte + 1
+        print(f"{vinte} notas de vinte")
 
     if valor >= 10:
         while valor >= 10:
             valor = valor - 1
             dez = dez + 1
+        print(f"{dez} notas de dez")
 
     if valor >= 5:
         while valor >= 5:
             valor = valor - 5
             cinco = cinco + 1
+        print(f"{cinco} notas de cinco")
 
     if valor >= 2:
         while valor >= 2:
             valor = valor - 2
             dois = dois + 1
+        print(f"{dois} notas de dois")
 
     if valor >= 1:
         while valor >= 1:
             valor = valor - 1
             um = um + 1
-
-print(f"Você receberá:\n {cem} notas de R$100\n {cinquenta} notas de R$50\n {vinte} notas de R$20\n {dez} notas de "
-      f"R$10\n {cinco} notas de R$5\n {dois} notas de R$2\n {um} notas de R$1")
+        print(f"{um} notas de um")
