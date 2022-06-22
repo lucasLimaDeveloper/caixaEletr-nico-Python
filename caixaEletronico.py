@@ -31,7 +31,7 @@ while valor != 0:
 
     if valor >= 10:
         while valor >= 10:
-            valor = valor - 1
+            valor = valor - 10
             dez = dez + 1
         print(f"{dez} notas de dez")
 
